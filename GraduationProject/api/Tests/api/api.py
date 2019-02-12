@@ -34,7 +34,7 @@ def getImageAndRunScript():
 	else :
 		return abort(404)
 	import helloWorld as importedScript
-	return importedScript.helloworld()
+	return importedScript.helloworld(imageUrl)
 	
 
 app.run()
