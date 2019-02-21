@@ -81,7 +81,7 @@ def getImageAndRunScript():
 		print('false', file=sys.stderr)
 		return abort(404)
 	import helloWorld as importedScript
-	return importedScript.helloworld(serverImageUrl)
+	return importedScript.helloworld()
 @app.route('/upload', methods= ['GET', 'POST'])
 def upload_file():
     if request.method == 'POST':
