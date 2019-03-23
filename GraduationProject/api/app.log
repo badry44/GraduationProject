@@ -1,0 +1,32 @@
+2019-03-17 11:19:20,907 : - * Debugger is active!
+2019-03-17 11:20:55,510 : - * Debugger is active!
+2019-03-17 11:27:59,293 : - * Debugger is active!
+2019-03-17 11:45:46,345 : - * Debugger is active!
+2019-03-17 12:46:09,617 : - * Debugger is active!
+2019-03-17 16:51:01,781 : - * Debugger is active!
+2019-03-17 16:51:17,107 : -pop from empty list
+Traceback (most recent call last):
+  File "api_s.py", line 93, in getImageAndRunScript
+    classResult , accuracyResult = importedScript.predict(serverImageUrl,modelUrl,labelUrl)
+  File "E:\11gam3a\4-second term\Graduation Project\api\other\Prediction.py", line 29, in predict
+    model=load_model(modelUrl)
+  File "C:\Users\lenovo\Anaconda3\envs\environmentTest\lib\site-packages\keras\engine\saving.py", line 419, in load_model
+    model = _deserialize_model(f, custom_objects, compile)
+  File "C:\Users\lenovo\Anaconda3\envs\environmentTest\lib\site-packages\keras\engine\saving.py", line 287, in _deserialize_model
+    K.batch_set_value(weight_value_tuples)
+  File "C:\Users\lenovo\Anaconda3\envs\environmentTest\lib\site-packages\keras\backend\tensorflow_backend.py", line 2470, in batch_set_value
+    get_session().run(assign_ops, feed_dict=feed_dict)
+  File "C:\Users\lenovo\Anaconda3\envs\environmentTest\lib\site-packages\keras\backend\tensorflow_backend.py", line 206, in get_session
+    session.run(tf.variables_initializer(uninitialized_vars))
+  File "C:\Users\lenovo\Anaconda3\envs\environmentTest\lib\site-packages\tensorflow\python\ops\variables.py", line 1588, in variables_initializer
+    return control_flow_ops.group(*[v.initializer for v in var_list], name=name)
+  File "C:\Users\lenovo\Anaconda3\envs\environmentTest\lib\site-packages\tensorflow\python\ops\control_flow_ops.py", line 3373, in group
+    return _GroupControlDeps(dev, deps, name=name)
+  File "C:\Users\lenovo\Anaconda3\envs\environmentTest\lib\site-packages\tensorflow\python\ops\control_flow_ops.py", line 3325, in _GroupControlDeps
+    return no_op(name=name)
+  File "C:\Users\lenovo\Anaconda3\envs\environmentTest\lib\contextlib.py", line 88, in __exit__
+    next(self.gen)
+  File "C:\Users\lenovo\Anaconda3\envs\environmentTest\lib\site-packages\tensorflow\python\framework\ops.py", line 4093, in device
+    self._device_function_stack.pop()
+IndexError: pop from empty list
+2019-03-19 14:40:44,235 : - * Debugger is active!
